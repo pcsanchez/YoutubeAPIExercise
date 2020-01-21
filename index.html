@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" lang="EN">
+        <title>Youtube API</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <header>
+            <h1>Busqueda de videos de youtube</h1>
+        </header>
+
+        <main>
+            <section>
+                <form id="videoForm">
+                    <label for="searchTerm">Termino:</label>
+                    <input type="text" name="searchTerm" id="searchTerm">
+                    <button type="submit">Buscar!</button>
+                </form>
+            </section>
+
+            <section>
+                <div id="results"></div>
+            </section>
+
+            <section>
+                <button id="previousButton">Anterior</button>
+                <button id="nextButton">Siguiente</button>
+            </section>
+        </main>
+        
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
